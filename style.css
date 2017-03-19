@@ -9,7 +9,7 @@ body, html{
 .cen{
     position: fixed;
     font-size:300%;
-    width:420px;
+    width:32%;
     top: 50%;
     left: 50%;
     color:yellow;
@@ -44,8 +44,8 @@ body, html{
 #portfolio{
     font-family:Lobster,Monospace;
     margin-top:80px;
-    margin-left:300px;
-    margin-right:300px;
+    margin-left:25%;
+    margin-right:25%;
     font-size:150%;
     background-color:#cb6;
     border:2px solid black;
@@ -55,8 +55,8 @@ body, html{
 #contact{
     font-family:Lobster,Monospace;
     margin-top:80px;
-    margin-left:300px;
-    margin-right:300px;
+    margin-left:25%;
+    margin-right:25%;
     font-size:150%;
     background-color:#cb6;
     border:2px solid black;
@@ -73,13 +73,13 @@ body, html{
     top: 0;
 }
 #top1{
-    margin-left:775px;
+    margin-left:60%;
   }
   #top2{
-    margin-left:30px;
+    margin-left:2.5%;
   }
   #top3{
-    margin-left:74px;
+    margin-left:6%;
   }
 .btn {
     padding: 10px 20px;
