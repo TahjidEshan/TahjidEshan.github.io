@@ -36,20 +36,22 @@
       $('#picture').hide();
       $('#contact').hide();
       $('#portfolio').hide();
+      $('#NewNote').hide();
       $("#topDiv").css("background-color","rgba(25,25,25,.5)");
       $(".cen").hide();
       $(".cen").fadeIn(3000);
       $("#topDiv").fadeIn(5000);
       $('#formSubmit').on('submit', function(e) {
       $('#formSubmit').fadeOut(2000);
-      $('#formSubmit').prepend('Your submission was recieved, thank you. <br> I will get back to you ASAP. <br> Tahjid');
+      $('#Note').fadeOut(2000);
+      $('#NewNote').fadeIn(2000);
     });
     });
   </script>
   <div class="container-fluid whole">
     <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" id="topDiv">
       <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1" id="top1">
-        <a href="#about" onclick="$('#about').fadeIn(1000);$('#picture').fadeIn(1000);$('#portfolio').hide(); $('#contact').hide(); return false;"><button class="btn btn-primary btn-lg btn-black sharp"><i class="fa fa-info-circle"></i> About</button></a></div>
+        <a href="#about" onclick="$('#portfolio').hide(); $('#contact').hide();$('#about').fadeIn(2000);$('#picture').fadeIn(2000); return false;"><button class="btn btn-primary btn-lg btn-black sharp"><i class="fa fa-info-circle"></i> About</button></a></div>
         <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1" id="top2">
           <a href="#portfolio" onclick="$('#about').hide();$('#picture').fadeIn(1000);$('#portfolio').fadeIn(1000);$('#contact').hide();$('#Name-Center').hide(); return false;"><button class="btn btn-primary btn-lg btn-black sharp"><i class="fa fa-address-card" aria-hidden="true"></i>
             Portfolio</button></a></div>
@@ -133,9 +135,12 @@
                             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                           </div>
 
-                          <div class="col-md-5 col-sm-5 col-xs-5 col-lg-5">
+                          <div class="col-md-5 col-sm-5 col-xs-5 col-lg-5" id="Note">
                             Please feel free to contact me regarding any queries or anything, I try to respond as soon as possible.
                             P.S. No Spamming Please, Thank You.
+                          </div>
+                          <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" id="NewNote">
+                          Your submission was recieved, thank you. <br> I will get back to you ASAP. <br> Tahjid
                           </div>
                         </div>
                       </div>
